@@ -11,4 +11,16 @@ I used the pix2pix maps dataset available over [here](https://people.eecs.berkel
 * [pytorch](https://pytorch.org/): `0.4.1`
 * [torchvision](https://pytorch.org/docs/stable/torchvision/index.html): `0.2.1`
 
+## Examples
+
+Generated
+![gen_image_99_400](https://github.com/greed2411/unet_pytorch/blob/master/samples/gen_image_99_400.png)
+![gen_image_99_0](https://github.com/greed2411/unet_pytorch/blob/master/samples/gen_image_99_0.png)
+Label
+![label_image_99_400](https://github.com/greed2411/unet_pytorch/blob/master/samples/label_image_99_400.png)
+![label_image_99_0](https://github.com/greed2411/unet_pytorch/blob/master/samples/label_image_99_0.png)
+Input
+![original_image_99_400](https://github.com/greed2411/unet_pytorch/blob/master/samples/original_image_99_400.png)
+![original_image_99_0](https://github.com/greed2411/unet_pytorch/blob/master/samples/original_image_99_0.png)
+
 P.S: It took 12 hours to train on a 1050Ti with a batch size of 5 for 100 epochs. If I tried to increase the batch size, I ran out of memory. I asked around and people suggested using [checkpoint](https://pytorch.org/docs/stable/checkpoint.html#torch.utils.checkpoint.checkpoint) and I found a [discussion post](https://discuss.pytorch.org/t/torch-utils-checkpoint-checkpoint/16827) related to it. Haven't tried it yet, therefore any suggestion or crtiques are always welcome. 
